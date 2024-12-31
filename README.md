@@ -54,7 +54,9 @@ git commit -m "Add your commit message"
 git push origin feature/your-feature-name
 
 5.Open a pull request and describe your changes.
+```
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+ ## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
