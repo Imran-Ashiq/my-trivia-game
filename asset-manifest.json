@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.d8858514.js",
+    "static/js/422.7617ff9c.chunk.js": "/static/js/422.7617ff9c.chunk.js",
+    "static/js/922.2029b0c6.chunk.js": "/static/js/922.2029b0c6.chunk.js",
+    "static/js/344.d90a0483.chunk.js": "/static/js/344.d90a0483.chunk.js",
+    "static/js/158.508fb7ec.chunk.js": "/static/js/158.508fb7ec.chunk.js",
+    "static/js/296.c87bcd19.chunk.js": "/static/js/296.c87bcd19.chunk.js",
+    "static/js/453.9f729b33.chunk.js": "/static/js/453.9f729b33.chunk.js",
+    "static/js/488.77dbb292.chunk.js": "/static/js/488.77dbb292.chunk.js",
+    "static/js/885.ed3af1dc.chunk.js": "/static/js/885.ed3af1dc.chunk.js",
+    "static/js/219.01a0460d.chunk.js": "/static/js/219.01a0460d.chunk.js",
+    "static/media/background.mp3": "/static/media/background.b66c1c5db8ea2512ccdd.mp3",
+    "static/media/my-logo.png": "/static/media/my-logo.e2d135d5d2c565686dba.png",
+    "static/media/incorrect.mp3": "/static/media/incorrect.9633cf62a3b34193e0c6.mp3",
+    "static/media/correct.mp3": "/static/media/correct.1dd2eda18e900449e771.mp3",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.d8858514.js.map": "/static/js/main.d8858514.js.map",
+    "422.7617ff9c.chunk.js.map": "/static/js/422.7617ff9c.chunk.js.map",
+    "922.2029b0c6.chunk.js.map": "/static/js/922.2029b0c6.chunk.js.map",
+    "344.d90a0483.chunk.js.map": "/static/js/344.d90a0483.chunk.js.map",
+    "158.508fb7ec.chunk.js.map": "/static/js/158.508fb7ec.chunk.js.map",
+    "296.c87bcd19.chunk.js.map": "/static/js/296.c87bcd19.chunk.js.map",
+    "453.9f729b33.chunk.js.map": "/static/js/453.9f729b33.chunk.js.map",
+    "488.77dbb292.chunk.js.map": "/static/js/488.77dbb292.chunk.js.map",
+    "885.ed3af1dc.chunk.js.map": "/static/js/885.ed3af1dc.chunk.js.map",
+    "219.01a0460d.chunk.js.map": "/static/js/219.01a0460d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d8858514.js"
+  ]
+}
