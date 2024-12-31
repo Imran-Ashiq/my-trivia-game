@@ -1,6 +1,7 @@
 import React, { useState, Suspense, lazy } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import logo from './my-logo.png';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 const HomeScreen = lazy(() => import('./components/HomeScreen'));
 const QuestionScreen = lazy(() => import('./components/QuestionScreen'));
@@ -82,28 +83,36 @@ const App = () => {
       <GlobalStyle />
       <div className="App">
         <Suspense fallback={<div>Loading...</div>}>
-          {!profileCompleted ? (
-            <Profile onProfileSave={handleProfileSave} onContinue={handleContinue} />
-          ) : !gameStarted && !gameEnded ? (
-            <div>
-              <Logo src={logo} alt="Logo" />
-              <HomeScreen startGame={startGame} />
-              <Leaderboard />
-              <Achievements />
-            </div>
-          ) : gameStarted ? (
-            <QuestionScreen
-              category={category}
-              gameMode={gameMode}
-              timeLimit={timeLimit}
-              endGame={endGame}
-              darkMode={darkMode}
-              language={language}
-              onSettingsChange={handleSettingsChange}
-            />
-          ) : (
-            <ResultScreen score={score} playAgain={playAgain} />
-          )}
+          <Router>
+            <Routes>
+              {!profileCompleted ? (
+                <Route path="/" element={<Profile onProfileSave={handleProfileSave} onContinue={handleContinue} />} />
+              ) : !gameStarted && !gameEnded ? (
+                <Route path="/" element={
+                  <div>
+                    <Logo src={logo} alt="Logo" />
+                    <HomeScreen startGame={startGame} />
+                    <Leaderboard />
+                    <Achievements />
+                  </div>
+                } />
+              ) : gameStarted ? (
+                <Route path="/question" element={
+                  <QuestionScreen
+                    category={category}
+                    gameMode={gameMode}
+                    timeLimit={timeLimit}
+                    endGame={endGame}
+                    darkMode={darkMode}
+                    language={language}
+                    onSettingsChange={handleSettingsChange}
+                  />
+                } />
+              ) : (
+                <Route path="/result" element={<ResultScreen score={score} playAgain={playAgain} />} />
+              )}
+            </Routes>
+          </Router>
         </Suspense>
       </div>
     </ThemeProvider>

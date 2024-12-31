@@ -211,6 +211,10 @@ const QuestionScreen = ({ category, gameMode, timeLimit, endGame, darkMode, lang
     }
   }, [timer]);
 
+  useEffect(() => {
+    handleNextQuestion();
+  }, [handleNextQuestion]);
+
   const handleAnswer = (answer) => {
     setSelectedAnswer(answer);
     setShowCorrectAnswer(true);
