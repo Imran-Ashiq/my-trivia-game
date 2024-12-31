@@ -85,32 +85,12 @@ const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <Router>
             <Routes>
-              {!profileCompleted ? (
-                <Route path="/" element={<Profile onProfileSave={handleProfileSave} onContinue={handleContinue} />} />
-              ) : !gameStarted && !gameEnded ? (
-                <Route path="/" element={
-                  <div>
-                    <Logo src={logo} alt="Logo" />
-                    <HomeScreen startGame={startGame} />
-                    <Leaderboard />
-                    <Achievements />
-                  </div>
-                } />
-              ) : gameStarted ? (
-                <Route path="/question" element={
-                  <QuestionScreen
-                    category={category}
-                    gameMode={gameMode}
-                    timeLimit={timeLimit}
-                    endGame={endGame}
-                    darkMode={darkMode}
-                    language={language}
-                    onSettingsChange={handleSettingsChange}
-                  />
-                } />
-              ) : (
-                <Route path="/result" element={<ResultScreen score={score} playAgain={playAgain} />} />
-              )}
+              <Route path="/" element={<HomeScreen />} />
+              <Route path="/question" element={<QuestionScreen />} />
+              <Route path="/result" element={<ResultScreen />} />
+              <Route path="/leaderboard" element={<Leaderboard />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/achievements" element={<Achievements />} />
             </Routes>
           </Router>
         </Suspense>
