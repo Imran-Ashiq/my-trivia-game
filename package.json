@@ -8,6 +8,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+    "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.15.0",
     "styled-components": "^6.1.13",
@@ -39,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^3.2.3"
   }
 }
